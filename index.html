@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -8,8 +9,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
     <title>在香港，你面臨多少人的競爭？</title>
-
 </head>
 
 <body>
@@ -21,22 +22,28 @@
         <div class="row">
             <div class="col-md-8 col-sm-12 col-xs-12">
                 <img src="http://images.www.sizz.hk/wp-content/uploads/2016/05/job7.jpg" alt="Comic" style="text-align:center">
+                <div>
+                    <p> </p>
+                </div>
+                <div>
+                    <p> </p>
+                </div>
             </div>
             <div class="col-md-4 col-sm-12 col-xs-12">
                 <div>
                     <label>請選擇你的就讀專業</label>
                     <select id="index">
-             <option value="one">商科課程</option>
-             <option value="two">文學及社會科學</option>
-             <option value="three">機械、電機、電子及輪機工程</option>
-             <option value="four">建築及營造工程</option>
-             <option value="five">電腦課程</option>
-             <option value="six">純科學</option>
-             <option value="seven">醫療衛生課程</option>
-             <option value="eight">教育</option>
-             <option value="nine">紡織、設計及其他工業技術</option>
-             <option value="ten">其他科目</option>
-            </select>
+                      <option value="one">商科課程</option>
+                      <option value="two">文學及社會科學</option>
+                      <option value="three">機械、電機、電子及輪機工程</option>
+                      <option value="four">建築及營造工程</option>
+                      <option value="five">電腦課程</option>
+                      <option value="six">純科學</option>
+                      <option value="seven">醫療衛生課程</option>
+                      <option value="eight">教育</option>
+                      <option value="nine">紡織、設計及其他工業技術</option>
+                      <option value="ten">其他科目</option>
+                     </select>
                 </div>
                 <div>
                     <p> </p>
@@ -62,20 +69,51 @@
                     <input class="form-control" type="text" id="output" readonly="">
                 </div>
             </div>
-            <footer>
-                <div class="footer">
-                    <a href="http://www.bycensus2016.gov.hk/tc/bc-mt.html#footnote2">See Original Data Here</a>
-                </div>
-            </footer>
-            <script text="text/javascipt">
-                $(function() {
-                    // Routine format; put all your jQuery initialisation inside
-                    $('#submit').click(function() {
-                        var index = $('#index').val();
-
-                    });
-                }); // Routine format; put all your jQuery initialisation inside
-            </script>
+        </div>
+        <footer>
+            <div class="footer">
+                <a href="http://www.bycensus2016.gov.hk/tc/bc-mt.html#footnote2">See Original Data Here</a>
+            </div>
+        </footer>
+        <script text="text/javascipt">
+            $(function() {
+                // Routine format; put all your jQuery initialisation inside
+                $('#submit').click(function() {
+                    var index = $('#index').val();
+                    $('#output').val(output);
+                    if (index = "one") {
+                        output = "695 489"
+                    }
+                    if (index = "two") {
+                        output = "366 529"
+                    }
+                    if (index = "three") {
+                        output = "177 695"
+                    }
+                    if (index = "four") {
+                        output = "170 196"
+                    }
+                    if (index = "five") {
+                        output = "156 674"
+                    }
+                    if (index = "six") {
+                        output = "133 749"
+                    }
+                    if (index = "seven") {
+                        output = "120 528"
+                    }
+                    if (index = "eight") {
+                        output = "104 410"
+                    }
+                    if (index = "nine") {
+                        output = "31 221"
+                    }
+                    if (index = "ten") {
+                        output = "173 616"
+                    }
+                });
+            });
+        </script>
 </body>
 
 </html>
