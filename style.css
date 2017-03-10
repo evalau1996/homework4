@@ -1,5 +1,10 @@
-footer. {
-    text-align: center;
-    background-color: navajowhite;
+h1 {
+    color: FireBrick;
+}
+
+.footer {
     position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 60px;
 }
