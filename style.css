@@ -2,9 +2,14 @@ h1 {
     color: FireBrick;
 }
 
-.footer {
+.page-footer {
     position: absolute;
     bottom: 0;
-    left: 0;
-    height: 60px;
+    background-color: navajowhite;
+    text-align: center;
+    height：20px;
+}
+
+.row {
+    padding-bottom: 20px;
 }
